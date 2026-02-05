@@ -1,12 +1,8 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -20,188 +16,123 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
+# Virtual Environments
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
+.venv/
+conda/
+.conda/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
 
-# Rope project settings
-.ropeproject
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
 
-# mkdocs documentation
-/site
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Data files (large CSV files - keep only sample data)
+# Uncomment the following lines if you want to exclude all data files
+# *.csv
+# !data/sample_*.csv
+# !data/*_sample.csv
 
-# Pyre type checker
-.pyre/
+# Keep only sample/example data files
+data/*_updated.csv
+data/*_原始数据.csv
+data/prediction_results.csv
+data/pinnacle_compare.csv
+data/ou_backtest_*.csv
 
-# pytype static type analyzer
-.pytype/
+# Model outputs and results
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+models/
+checkpoints/
 
-# Cython debug symbols
-cython_debug/
+# Logs
+*.log
+logs/
+supplement_log.txt
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+!docs/*.png
+!docs/*.jpg
 
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+# Personal/User-specific files
+使用说明.txt
+失败原因分析.md
+学术成果报告.md
+曼彻斯特大学申请-项目成果总结.md
 
-# Ruff stuff:
-.ruff_cache/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
 
-# PyPI configuration file
-.pypirc
+# Sensitive data patterns (if any)
+*_secret*
+*_password*
+*_key*
+*_token*
+credentials.json
+config.json
 
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
+# Large data directories
+data/raw/
+data/processed/
+英超/英超原始数据/
+西甲/
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# Keep only essential sample data
+!data/all_seasons_features.csv
+!data/future_matches_template.csv
+
+# Exclude large raw data backup files
+data/*_raw.csv
+data/*_backup.csv
+
+# Temporary cleaning/verification scripts (if any remain)
+*_clean*.py
+*_prepare*.py
+*_verify*.py
+*execute*.py
+*.bat
+*检查*.md
+*清单*.md
+*CHECKLIST*.md
